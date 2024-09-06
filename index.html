@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>光陵ジオゲッサー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main" id="shoki">
+        <h1 id="title">難易度を選んでください</h1>
+        <h2 id="t_geo">ジオゲッサ</h2>
+        <div><input type="radio" id="chose_geo_easy" name="geo" value="easy" checked><label for="chose_geo_easy">初級</label></div>
+        <div><input type="radio" id="chose_geo_normal" name="geo" value="normal"><label for="chose_geo_normal">中級</label></div>
+        <div><input type="radio" id="chose_geo_hard" name="geo" value="hard"><label for="chose_geo_hard">上級</label></div>
+        <h2 id="t_qui">謎解き</h2>
+        <div><input type="radio" id="chose_qui_easy" name="qui" value="easy" checked><label for="chose_qui_easy">初級</label></div>
+        <div><input type="radio" id="chose_qui_normal" name="qui" value="normal"><label for="chose_qui_normal">中級</label></div>
+        <div><input type="radio" id="chose_qui_hard" name="qui" value="hard"><label for="chose_qui_hard">上級</label></div>
+        <p class="kara"></p>
+        <input type="button" value="スタート" class="button" onclick="start()">
+    </div>
+    <div class="main" id="picture">
+        <h2 id="t_geo">ジオゲッサ</h2>
+        <div class="mondai">
+            <img class="game_geo">
+            <p class="place_geo"></p>
+        </div>
+        <div class="mondai">
+            <img class="game_geo">
+            <p class="place_geo"></p>
+        </div>
+        <h2 id="t_qui">謎解き</h2>
+        <img class="game_qui">
+        <img class="game_qui">
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
