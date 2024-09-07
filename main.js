@@ -86,7 +86,7 @@ function set_picture(){
         place_geo[i].textContent = geo_where[i]
     }
     for(let i = 0;i < qui_where.length;i++){
-        game_qui[i].src = "./geo/"+qui_nanido+"/"+qui_where[i]+".JPG"
+        game_qui[i].src = "./geo/"+qui_nanido+"/"+qui_where[i]+".jpg"
         place_qui[i].textContent = qui_where[i]
     }
 }
