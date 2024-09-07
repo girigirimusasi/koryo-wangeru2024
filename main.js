@@ -6,10 +6,11 @@ const chose_qui = document.getElementsByName("qui")
 const game_geo = document.getElementsByClassName("game_geo")
 const game_qui = document.getElementsByClassName("game_qui")
 const place_geo = document.getElementsByClassName("place_geo")
+const place_qui = document.getElementsByClassName("place_qui")
 
 //画像系
-const num_geo = [6,5,6]
-const num_qui = [2,3,4]
+const num_geo = [6,5,3]
+const num_qui = [4,3,3]
 const num_play = [2,2,1]
 
 
@@ -84,9 +85,10 @@ function set_picture(){
         game_geo[i].src = "./geo/"+geo_nanido+"/"+geo_where[i]+".JPG"
         place_geo[i].textContent = geo_where[i]
     }
-    /*for(let i = 0;i < length(qui_where);i++){
-        game_geo[i].src = "./geo/"+qui_nanido+"/"+qui_where[i]+".JPG"
-    }*/
+    for(let i = 0;i < qui_where.length;i++){
+        game_qui[i].src = "./geo/"+qui_nanido+"/"+qui_where[i]+".JPG"
+        place_qui[i].textContent = qui_where[i]
+    }
 }
 
 //リロード処理
